@@ -1,0 +1,207 @@
+
+$font-header: 'Redressed', cursive;
+$font-main: 'Roboto', sans-serif;
+
+$color-color: #ffc107;
+
+//* Global *//
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+
+//* Navigation *//
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 98vw;
+  z-index: 1;
+}
+.logo {
+  height: 75px;
+  margin: 40px 0 0 200px;
+  width: 75px;
+
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.menu {
+  margin: 60px 200px 0 0;
+
+  li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 15px;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+//* Splash *//
+
+.splash {
+  position: relative;
+  background-image: url('https://i.ibb.co/7G6rH5s/pexels-xenia-shtreter-5829764-1.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: $font-header;
+  color: white;
+
+  h2 {
+    font-size: 70px;
+    margin-bottom: 50px;
+  }
+  .btn-head {
+    position: relative;
+    background: $color-color;
+    padding: 10px 20px;
+    width: 200px;
+    font-family: $font-main;
+    margin: 0 auto;
+
+    &:hover {
+      background: #ffeb3b;
+      cursor: pointer;
+    }
+
+    a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
+
+//* Services *//
+
+.services {
+  padding: 100px 0;
+
+  h2 {
+    font-size: 40px;
+  }
+  p {
+    color: #607d8b;
+    margin-bottom: 60px;
+  }
+  .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+    margin: 0 auto;
+    border: 3px $color-color solid;
+    border-radius: 50%;
+
+    i {
+      font-size: 40px;
+      color: $color-color;
+    }
+  }
+}
+
+//* Portfolio *//
+
+.portfolio {
+  background-color: #e0e0e0;
+  padding: 100px 0;
+
+  > h2 {
+    font-size: 40px;
+  }
+  > p {
+    color: #607d8b;
+    margin-bottom: 60px;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .row {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .p-feature {
+    background-color: white;
+    flex: 0 0 30%;
+    margin-bottom: 20px;
+
+    p {
+      margin-top: -5px;
+      color: #607d8b;
+      font-size: 10px;
+      font-family: cursive;
+    }
+    h3, {
+      padding: 20px 0 0 0;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+//* Footer *//
+
+footer {
+  position: relative;
+  padding: 30px;
+
+  .rights {
+    position: absolute;
+    text-align: left;
+    margin-left: 100px;
+
+    p {
+      margin-top: 10px;
+    }
+  }
+  .social-media {
+    width: 100%;
+
+    ul {
+      display: inline-flex;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        list-style: none;
+        height: 40px;
+        width: 40px;
+        background: #424242;
+        border-radius: 50%;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
