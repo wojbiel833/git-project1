@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -217,10 +219,11 @@ footer .social-media ul li a {
 
 @media (max-width: 450px) {
   .logo {
-    margin: 30px 0 0 10px;
+    margin: 5px 0 0 10px;
   }
   .menu {
-    margin: 60px 10px 0 0;
+    margin: 20px 0px 0 10px;
+    width: 300px;
   }
   .splash {
     height: 100vh;
@@ -237,12 +240,42 @@ footer .social-media ul li a {
   }
 }
 
-@media (min-width: 451px) and (max-width: 767px) {
+@media (min-width: 451px) and (max-width: 534px) {
   .logo {
-    margin: 30px 0 0 100px;
+    margin: 30px 0 0 50px;
   }
   .menu {
-    margin: 60px 100px 0 0;
+    margin: 50px 50px 0 0;
+    width: 300px;
+  }
+  .splash-inner {
+    margin-top: 20px;
+  }
+  .services .icon {
+    margin-bottom: 40px;
+  }
+  .portfolio .p-feature {
+    md-flex: 0 0 50%;
+    -ms-flex: 50%;
+        flex: 50%;
+  }
+  footer .rights {
+    position: static;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 535px) and (max-width: 767px) {
+  .logo {
+    margin: 30px 0 0 50px;
+  }
+  .menu {
+    margin: 50px 50px 0 0;
+    width: 400px;
+  }
+  .splash-inner {
+    margin-top: 20px;
   }
   .services .icon {
     margin-bottom: 40px;
